@@ -8,7 +8,9 @@ def index():
     """
     Function that opens home/index page of the project.
     """
-    return render_template('pages/index.html')
+
+    return render_template('pages/index.html', 
+                            title='Home')
 
 
 if __name__ == '__main__':
