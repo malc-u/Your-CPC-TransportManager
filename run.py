@@ -12,6 +12,15 @@ def index():
     return render_template('pages/index.html', 
                             title='Home')
 
+@app.route('/about')
+def about():
+    """
+    Function that opens about page of the project.
+    """
+
+    return render_template('pages/index.html', 
+                            title='About')
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
