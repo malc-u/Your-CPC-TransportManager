@@ -23,6 +23,14 @@ def about():
                             title='About')
 
 
+@app.route('/services')
+def services():
+    """
+    Function that opens services page of the project.
+    """
+
+    return render_template('pages/services.html', 
+                            title='Services')
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
