@@ -32,6 +32,17 @@ def services():
     return render_template('pages/services.html', 
                             title='Services')
 
+
+@app.route('/contact')
+def contact():
+    """
+    Function that opens contact page of the project.
+    """
+
+    return render_template('pages/contact.html', 
+                            title='Contact')
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=os.environ.get('PORT'),
