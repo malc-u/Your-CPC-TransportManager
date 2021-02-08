@@ -1,5 +1,6 @@
 import os
 from flask import Flask, render_template
+from flask_mail import Mail
 
 # Enviroment variables  - containing sensitive info
 if os.path.exists("env.py"):
@@ -20,6 +21,11 @@ mail_settings = {
     "MAIL_USERNAME": os.environ['MAIL_USERNAME'],
     "MAIL_PASSWORD": os.environ['MAIL_PASSWORD'],
 }
+
+#Flask-Mail and Mail instance configuration
+app.config.update(mail_settings)
+mail = Mail(app)
+
 
 @app.route('/')
 def index():
