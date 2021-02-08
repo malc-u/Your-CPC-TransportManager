@@ -6,6 +6,8 @@ if os.path.exists("env.py"):
 
 app = Flask(__name__)
 
+app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
+
 @app.route('/')
 def index():
     """
