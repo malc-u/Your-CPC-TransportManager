@@ -1,12 +1,25 @@
 import os
 from flask import Flask, render_template
 
+# Enviroment variables  - containing sensitive info
 if os.path.exists("env.py"):
     import env
 
 app = Flask(__name__)
 
+#SECRET_KEY configuration
 app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
+
+
+#Settings needed by Flask-Mail
+mail_settings = {
+    "MAIL_SERVER": 'smtp.gmail.com',
+    "MAIL_PORT": 465,
+    "MAIL_USE_TLS": False,
+    "MAIL_USE_SSL": True,
+    "MAIL_USERNAME": os.environ['MAIL_USERNAME'],
+    "MAIL_PASSWORD": os.environ['MAIL_PASSWORD'],
+}
 
 @app.route('/')
 def index():
