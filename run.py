@@ -80,6 +80,7 @@ def contact():
                       sender=os.environ["MAIL_USERNAME"],
                       recipients=[os.environ["MAIL_USERNAME"]],
                       body="This is message from "+name+"\nEmail Address: "+email+"\n\nMessage sent:\n"+message)
+        mail.send(msg)
 
 
     return render_template('pages/contact.html', 
