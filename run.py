@@ -27,7 +27,11 @@ mail_settings = {
 app.config.update(mail_settings)
 mail = Mail(app)
 
+"""
+Routes and views
+"""
 
+#Index
 @app.route('/')
 def index():
     """
@@ -38,6 +42,7 @@ def index():
                             title='Home')
 
 
+#About
 @app.route('/about')
 def about():
     """
@@ -48,6 +53,7 @@ def about():
                             title='About')
 
 
+#Services
 @app.route('/services')
 def services():
     """
@@ -58,6 +64,7 @@ def services():
                             title='Services')
 
 
+#Contact
 @app.route('/contact')
 def contact():
     """
