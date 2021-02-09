@@ -71,7 +71,13 @@ def contact():
     Function that opens contact page of the project.
     """
     form = ContactForm()
-    
+
+    if form.validate_on_submit(): 
+        name = form.name.data
+        email = form.email.data
+        message = form.message.data
+       
+
     return render_template('pages/contact.html', 
                             title='Contact')
 
