@@ -1,6 +1,6 @@
 import os
 from flask import Flask, render_template
-from flask_mail import Mail
+from flask_mail import Mail, Message
 from forms import ContactForm
 
 # Enviroment variables  - containing sensitive info
@@ -76,7 +76,11 @@ def contact():
         name = form.name.data
         email = form.email.data
         message = form.message.data
-       
+        msg = Message(name,
+                      sender=os.environ["MAIL_USERNAME"],
+                      recipients=[os.environ["MAIL_USERNAME"]],
+                      body="This is message from "+name+"\nEmail Address: "+email+"\n\nMessage sent:\n"+message)
+
 
     return render_template('pages/contact.html', 
                             title='Contact')
