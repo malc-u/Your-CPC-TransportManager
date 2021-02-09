@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template
 from flask_mail import Mail
+from forms import ContactForm
 
 # Enviroment variables  - containing sensitive info
 if os.path.exists("env.py"):
