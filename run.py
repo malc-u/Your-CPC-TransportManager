@@ -65,10 +65,12 @@ def services():
 
 
 #Contact
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
     """
-    Function that opens contact page of the project.
+    Function that opens contact page of the project with contact form included.
+    Form sends all required contact details provided by the sender and is validated
+    on on submit to make sure no information is missing.
     """
     form = ContactForm()
 
