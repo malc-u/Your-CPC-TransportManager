@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template
+from flask import Flask, render_template, flash, url_for, redirect
 from flask_mail import Mail, Message
 from forms import ContactForm
 
@@ -81,7 +81,8 @@ def contact():
                       recipients=[os.environ["MAIL_USERNAME"]],
                       body="This is message from "+name+"\nEmail Address: "+email+"\n\nMessage sent:\n"+message)
         mail.send(msg)
-
+        flash(u'Your message has been sent.', 'success')
+        return redirect(url_for('index'))
 
     return render_template('pages/contact.html', 
                             title='Contact')
