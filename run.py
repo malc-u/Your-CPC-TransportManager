@@ -70,7 +70,8 @@ def contact():
     """
     Function that opens contact page of the project.
     """
-
+    form = ContactForm()
+    
     return render_template('pages/contact.html', 
                             title='Contact')
 
