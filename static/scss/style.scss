@@ -7,3 +7,21 @@ body{
     position: relative;
     font-size: 16px;
 }
+
+
+/* Navigation styles */
+.nav-menu {
+    padding: 0rem 0 !important;
+    background: -moz-linear-gradient(135deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
+    background: -webkit-linear-gradient(135deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
+    -webkit-box-shadow: 0px 3px 20px 0px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 0px 3px 20px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 3px 20px 0px rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+}
+
