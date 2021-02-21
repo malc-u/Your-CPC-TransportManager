@@ -18,3 +18,11 @@ body {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
 }
+
+/* Index page styles */
+#truck {
+  background-image: url("../img/truck.jpg");
+  min-height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
