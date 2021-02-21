@@ -1,2 +1,8 @@
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Newsreader&display=swap");
+/* Body styling */
+body {
+  scroll-behavior: smooth;
+  position: relative;
+  font-size: 16px;
+}
