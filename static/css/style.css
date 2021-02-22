@@ -3,8 +3,10 @@
 /* Body styling */
 body {
   scroll-behavior: smooth;
+  background-color: #000000;
   position: relative;
   font-size: 16px;
+  color: #ffffff;
 }
 
 /* Navigation styles */
