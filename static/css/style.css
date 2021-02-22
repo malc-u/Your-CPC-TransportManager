@@ -1,5 +1,5 @@
 /* Font imports */
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Newsreader:ital,wght@1,200&display=swap");
 /* Body styling */
 body {
   scroll-behavior: smooth;
@@ -7,6 +7,10 @@ body {
   position: relative;
   font-size: 16px;
   color: #ffffff;
+}
+
+h1 {
+  color: red;
 }
 
 /* Navigation styles */
@@ -24,13 +28,12 @@ body {
 /* Index page styles */
 #truck {
   background-image: url("../img/truck.jpg");
-  min-height: 60vh;
+  min-height: 50vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* Footer styling*/
 footer {
-  padding: 0rem 0 !important;
   background: linear-gradient(295deg, red 20%, black 100%);
 }
