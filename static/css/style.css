@@ -28,3 +28,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* Footer styling*/
+footer {
+  padding: 0rem 0 !important;
+  background: linear-gradient(295deg, red 20%, black 100%);
+}

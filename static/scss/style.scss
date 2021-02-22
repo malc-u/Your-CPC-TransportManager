@@ -36,3 +36,10 @@ body{
     background-repeat: no-repeat;
 }
 
+/* Footer styling*/
+footer {
+    padding: 0rem 0 !important;
+    background: -moz-linear-gradient(295deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
+    background: -webkit-linear-gradient(295deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(295deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
+}
