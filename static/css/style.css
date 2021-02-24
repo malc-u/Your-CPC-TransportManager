@@ -51,3 +51,14 @@ h1 {
 footer {
   background: linear-gradient(295deg, red 20%, black 100%);
 }
+
+.mail-footer a, .mail-footer a:visited {
+  color: #ffffff;
+  font-family: 'Newsreader', sans-serif;
+  text-decoration: none;
+  transition: ease 0.75s;
+}
+
+.mail-footer a:hover {
+  font-size: 1.2rem;
+}
