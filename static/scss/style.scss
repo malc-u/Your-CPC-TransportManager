@@ -20,9 +20,6 @@ h1 {
     background: -moz-linear-gradient(135deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
     background: -webkit-linear-gradient(135deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
     background: linear-gradient(135deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
-    -webkit-box-shadow: 0px 3px 20px 0px rgba(255, 255, 255, 0.2);
-    -moz-box-shadow: 0px 3px 20px 0px rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 3px 20px 0px rgba(255, 255, 255, 0.2);
 }
 
 .navbar-brand {
@@ -65,11 +62,12 @@ h1 {
 .p-about {
     padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
+
 /* Footer styling*/
 footer {
-    background: -moz-linear-gradient(295deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
-    background: -webkit-linear-gradient(295deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
-    background: linear-gradient(295deg, rgb(255, 0, 0) 20%, rgb(0, 0, 0) 100%);
+    background: -moz-linear-gradient(1355deg, rgb(0, 0, 0) 20%, rgb(255, 0, 0) 100%);
+    background: -webkit-linear-gradient(135deg, rgb(0, 0, 0) 20%, rgb(255, 0, 0) 100%);
+    background: linear-gradient(135deg, rgb(0, 0, 0) 20%, rgb(255, 0, 0) 100%);
 }
 
 .mail-footer a, .mail-footer a:visited {

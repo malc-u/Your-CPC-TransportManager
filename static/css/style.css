@@ -17,7 +17,6 @@ h1 {
 .nav-menu {
   padding: 0rem 0 !important;
   background: linear-gradient(135deg, red 20%, black 100%);
-  box-shadow: 0px 3px 20px 0px rgba(255, 255, 255, 0.2);
 }
 
 .navbar-brand {
@@ -59,7 +58,7 @@ h1 {
 
 /* Footer styling*/
 footer {
-  background: linear-gradient(295deg, red 20%, black 100%);
+  background: linear-gradient(135deg, black 20%, red 100%);
 }
 
 .mail-footer a, .mail-footer a:visited {
