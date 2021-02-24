@@ -13,6 +13,16 @@ h1 {
   color: red;
 }
 
+.btn-index {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.btn-index:hover {
+  color: #ffffff;
+  background: linear-gradient(135deg, red 5%, black 100%);
+}
+
 /* Navigation styles */
 .nav-menu {
   padding: 0rem 0 !important;
@@ -32,7 +42,7 @@ h1 {
 /* Index page styles */
 #truck {
   background-image: url("../img/truck.jpg");
-  min-height: 50vh;
+  min-height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
 }
