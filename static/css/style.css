@@ -50,6 +50,11 @@ h1 {
 /* About page styles */
 .h2-about {
   border-bottom: 2px solid red;
+  padding-bottom: 0.5rem;
+}
+
+.p-about {
+  padding: 0.5rem 0.5rem 0rem 0.5rem;
 }
 
 /* Footer styling*/
