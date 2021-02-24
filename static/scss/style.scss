@@ -14,18 +14,6 @@ h1 {
     color: rgb(255, 0, 0);
 }
 
-.btn-index {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-}
-
-.btn-index:hover {
-    color: #ffffff;
-    background: -moz-linear-gradient(135deg, rgb(255, 0, 0) 5%, rgb(0, 0, 0) 100%);
-    background: -webkit-linear-gradient(135deg, rgb(255, 0, 0) 5%, rgb(0, 0, 0) 100%);
-    background: linear-gradient(135deg, rgb(255, 0, 0) 5%, rgb(0, 0, 0) 100%);;
-}
-
 /* Navigation styles */
 .nav-menu{
     padding: 0rem 0 !important;
@@ -53,6 +41,18 @@ h1 {
     min-height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.btn-index {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.btn-index:hover {
+    color: #ffffff;
+    background: -moz-linear-gradient(135deg, rgb(255, 0, 0) 5%, rgb(0, 0, 0) 100%);
+    background: -webkit-linear-gradient(135deg, rgb(255, 0, 0) 5%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(135deg, rgb(255, 0, 0) 5%, rgb(0, 0, 0) 100%);;
 }
 
 /* About page styles */
