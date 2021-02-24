@@ -47,6 +47,11 @@ h1 {
   background-repeat: no-repeat;
 }
 
+/* About page styles */
+.h2-about {
+  border-bottom: 2px solid red;
+}
+
 /* Footer styling*/
 footer {
   background: linear-gradient(295deg, red 20%, black 100%);
