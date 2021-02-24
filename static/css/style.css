@@ -54,11 +54,13 @@ h1 {
 
 .p-about {
   padding: 0.5rem 0.5rem 0rem 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .btn-about {
   border: 1px solid #ffffff;
   color: #ffffff;
+  margin-top: 0.5rem;
 }
 
 .btn-about:hover {
