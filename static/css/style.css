@@ -78,6 +78,19 @@ ol li {
   padding-left: 0.5rem;
 }
 
+ol li:before {
+  content: counter(list-counter);
+  counter-increment: list-counter;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 0.25rem solid black;
+  background: red;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
 /* Footer styling*/
 footer {
   background: linear-gradient(135deg, black 20%, red 100%);
