@@ -68,6 +68,12 @@ h1 {
   background: linear-gradient(135deg, black 5%, red 100%);
 }
 
+ol {
+  counter-reset: list-counter;
+  list-style: none;
+  float: left;
+}
+
 /* Footer styling*/
 footer {
   background: linear-gradient(135deg, black 20%, red 100%);

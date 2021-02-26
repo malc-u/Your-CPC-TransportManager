@@ -76,6 +76,13 @@ h1 {
     background: linear-gradient(135deg, rgb(0, 0, 0) 5%, rgb(255, 0, 0) 100%);
 }
 
+ol {
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+}
+
+
 /* Footer styling*/
 footer {
     background: -moz-linear-gradient(1355deg, rgb(0, 0, 0) 20%, rgb(255, 0, 0) 100%);
