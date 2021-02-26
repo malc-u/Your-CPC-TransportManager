@@ -74,6 +74,10 @@ ol {
   float: left;
 }
 
+ol li {
+  padding-left: 0.5rem;
+}
+
 /* Footer styling*/
 footer {
   background: linear-gradient(135deg, black 20%, red 100%);
