@@ -104,6 +104,17 @@ ol li:before{
     background-color:rgb(255, 0, 0);
 }
 
+.btn-contact {
+    color: #ffffff;
+    background: -moz-linear-gradient(135deg, rgb(255, 0, 0) 5%, rgb(0, 0, 0) 100%);
+    background: -webkit-linear-gradient(135deg, rgb(0, 0, 0) 5%, rgb(255, 0, 0) 100%);
+    background: linear-gradient(135deg, rgb(0, 0, 0) 5%, rgb(255, 0, 0) 100%);
+}
+
+.btn-contact:hover {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
 
 /* Footer styling*/
 footer {

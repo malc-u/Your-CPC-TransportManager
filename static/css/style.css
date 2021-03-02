@@ -96,6 +96,16 @@ ol li:before {
   background-color: red;
 }
 
+.btn-contact {
+  color: #ffffff;
+  background: linear-gradient(135deg, black 5%, red 100%);
+}
+
+.btn-contact:hover {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
 /* Footer styling*/
 footer {
   background: linear-gradient(135deg, black 20%, red 100%);
