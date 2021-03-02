@@ -91,6 +91,11 @@ ol li:before {
   display: inline-block;
 }
 
+/* Contact page styles */
+.form-group #checkbox:valid {
+  background-color: red;
+}
+
 /* Footer styling*/
 footer {
   background: linear-gradient(135deg, black 20%, red 100%);
