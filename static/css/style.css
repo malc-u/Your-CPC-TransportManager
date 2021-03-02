@@ -1,12 +1,13 @@
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Newsreader:ital,wght@1,200&display=swap");
+/* Colors */
 /* Body styling */
 body {
   scroll-behavior: smooth;
-  background-color: #000000;
+  background-color: black;
   position: relative;
   font-size: 16px;
-  color: #ffffff;
+  color: white;
 }
 
 h1 {
@@ -37,8 +38,8 @@ h1 {
 }
 
 .btn-index {
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid white;
+  color: white;
 }
 
 .btn-index:hover {
@@ -58,14 +59,14 @@ h1 {
 }
 
 .btn-about {
-  border: 1px solid #ffffff;
-  color: #ffffff;
+  border: 1px solid white;
+  color: white;
   margin-top: 0.5rem;
 }
 
 .btn-about:hover {
-  color: #ffffff;
-  background: linear-gradient(135deg, black 5%, red 100%);
+  color: white;
+  background: linear-gradient(1355deg, black 5%, red 100%);
 }
 
 ol {
@@ -109,21 +110,21 @@ ol li:before {
 
 .btn-contact {
   color: #ffffff;
-  background: linear-gradient(135deg, black 5%, red 100%);
+  background: linear-gradient(135deg, red 5%, black 100%);
 }
 
 .btn-contact:hover {
-  color: #ffffff;
-  border: 1px solid #ffffff;
+  color: white;
+  border: 1px solid white;
 }
 
 /* Footer styling*/
 footer {
-  background: linear-gradient(135deg, black 20%, red 100%);
+  background: linear-gradient(1355deg, black 20%, red 100%);
 }
 
 .mail-footer a, .mail-footer a:visited {
-  color: #ffffff;
+  color: white;
   font-family: 'Newsreader', sans-serif;
   text-decoration: none;
   transition: ease 0.75s;
