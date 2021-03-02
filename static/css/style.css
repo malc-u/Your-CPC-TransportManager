@@ -92,6 +92,17 @@ ol li:before {
 }
 
 /* Contact page styles */
+.contact-email {
+  color: red;
+  text-decoration: none;
+  transition: ease 0.75s;
+}
+
+.contact-email:hover {
+  font-size: 1.5rem;
+  color: red;
+}
+
 .form-group #checkbox:valid {
   background-color: red;
 }

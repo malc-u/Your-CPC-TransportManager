@@ -100,6 +100,18 @@ ol li:before{
 }
 
 /* Contact page styles */
+
+.contact-email {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    transition: ease 0.75s;
+}
+
+.contact-email:hover {
+    font-size: 1.5rem;
+    color:rgb(255, 0, 0);
+}
+
 .form-group #checkbox:valid {
     background-color:rgb(255, 0, 0);
 }
