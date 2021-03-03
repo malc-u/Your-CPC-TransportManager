@@ -1,27 +1,12 @@
-
-
 // Variables
 @import "./base/variables";
 
 // Base - body 
 @import "./base/base";
 
-/* Navigation styles */
-.nav-menu{
-    padding: 0rem 0 !important;
-    background: -moz-linear-gradient(135deg, $red 20%, $black 100%);
-    background: -webkit-linear-gradient(135deg, $red 20%, $black 100%);
-    background: linear-gradient(135deg, $red 20%, $black 100%);
-}
-
-.navbar-brand {
-    font-family: 'Newsreader', sans-serif;
-}
-
-.nav-link {
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 1px;
-}
+/* Components */
+// Navbar
+@import "./components/navbar";
 
 
 /* Index page styles */
