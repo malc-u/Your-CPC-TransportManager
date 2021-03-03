@@ -1,6 +1,5 @@
 /* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Newsreader:ital,wght@1,200&display=swap");
-/* Colors */
 /* Body styling */
 body {
   scroll-behavior: smooth;
@@ -14,6 +13,7 @@ h1 {
   color: red;
 }
 
+/* COMPONENTS */
 /* Navigation styles */
 .nav-menu {
   padding: 0rem 0 !important;
@@ -29,6 +29,23 @@ h1 {
   letter-spacing: 1px;
 }
 
+/* Footer styling*/
+footer {
+  background: linear-gradient(135deg, black 5%, red 100%);
+}
+
+.mail-footer a, .mail-footer a:visited {
+  color: white;
+  font-family: 'Newsreader', sans-serif;
+  text-decoration: none;
+  transition: ease 0.75s;
+}
+
+.mail-footer a:hover {
+  font-size: 1.2rem;
+}
+
+/* PAGES */
 /* Index page styles */
 #truck {
   background-image: url("../img/truck.jpg");
@@ -66,7 +83,7 @@ h1 {
 
 .btn-about:hover {
   color: white;
-  background: linear-gradient(1355deg, black 5%, red 100%);
+  background: linear-gradient(135deg, black 5%, red 100%);
 }
 
 ol {
@@ -116,20 +133,4 @@ ol li:before {
 .btn-contact:hover {
   color: white;
   border: 1px solid white;
-}
-
-/* Footer styling*/
-footer {
-  background: linear-gradient(1355deg, black 20%, red 100%);
-}
-
-.mail-footer a, .mail-footer a:visited {
-  color: white;
-  font-family: 'Newsreader', sans-serif;
-  text-decoration: none;
-  transition: ease 0.75s;
-}
-
-.mail-footer a:hover {
-  font-size: 1.2rem;
 }
