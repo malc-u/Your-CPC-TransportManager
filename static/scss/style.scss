@@ -4,9 +4,15 @@
 // Base - body 
 @import "./base/base";
 
-/* Components */
+/* COMPONENTS */
 // Navbar
 @import "./components/navbar";
 
 //Footer
 @import "./components/footer";
+
+
+/* PAGES */
+
+//Index page
+@import "./pages/index";
