@@ -1,0 +1,19 @@
+/* Index page styles */
+#truck {
+    background-image: url('../img/truck.jpg');
+    min-height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btn-index {
+    border: 1px solid $white;
+    color: $white;
+}
+
+.btn-index:hover {
+    color: #ffffff;
+    background: -moz-linear-gradient(135deg, $red 5%, $black 100%);
+    background: -webkit-linear-gradient(135deg, $red 5%, $black 100%);
+    background: linear-gradient(135deg, $red 5%, $black 100%);;
+}
