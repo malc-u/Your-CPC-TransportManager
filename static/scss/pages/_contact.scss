@@ -1,0 +1,28 @@
+/* Contact page styles */
+
+.contact-email {
+    color: $red;
+    text-decoration: none;
+    transition: ease 0.75s;
+}
+
+.contact-email:hover {
+    font-size: 1.5rem;
+    color: $red;
+}
+
+.form-group #checkbox:valid {
+    background-color: $red;
+}
+
+.btn-contact {
+    color: #ffffff;
+    background: -moz-linear-gradient(135deg, $red 5%, $black 100%);
+    background: -webkit-linear-gradient(135deg, $red 5%, $black 100%);
+    background: linear-gradient(135deg, $red 5%, $black 100%);
+}
+
+.btn-contact:hover {
+    color: $white;
+    border: 1px solid $white;
+}
