@@ -1,0 +1,46 @@
+/* About page styles */
+
+.h2-about {
+    border-bottom: 2px solid $red;
+    padding-bottom: 0.5rem;
+}
+
+.p-about {
+    padding: 0.5rem 0.5rem 0rem 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.btn-about {
+    border: 1px solid $white;
+    color: $white;
+    margin-top: 0.5rem;
+}
+
+.btn-about:hover {
+    color: $white;
+    background: -moz-linear-gradient(1355deg, $black 5%, $red 100%);
+    background: -webkit-linear-gradient(1355deg, $black 5%, $red 100%);
+    background: linear-gradient(1355deg, $black 5%, $red 100%);
+}
+
+ol {
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+}
+
+ol li {
+    padding-left: 0.5rem;
+}
+
+ol li:before{
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 0.25rem solid $black;
+    background: $red;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
