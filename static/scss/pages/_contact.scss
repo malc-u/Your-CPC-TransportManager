@@ -11,6 +11,10 @@
     color: $red;
 }
 
+.form-label {
+    padding-top: 0.5rem;
+}
+
 .form-group #checkbox:valid {
     background-color: $red;
 }
