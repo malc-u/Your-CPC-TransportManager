@@ -6,12 +6,13 @@
     padding-top: 2rem;
 }
 
-.doc3-link {
+.doc3-link, .ocrs-link {
     color: $red;
     text-decoration: none;
 }
 
-.doc3-link:hover {
+.doc3-link:hover,
+.ocrs-link:hover {
     color: $red;
     text-decoration: underline;
 }
