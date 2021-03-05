@@ -12,8 +12,8 @@
 }
 
 .btn-index:hover {
-    color: #ffffff;
+    color: $white;
     background: -moz-linear-gradient(135deg, $red 5%, $black 100%);
     background: -webkit-linear-gradient(135deg, $red 5%, $black 100%);
-    background: linear-gradient(135deg, $red 5%, $black 100%);;
+    background: linear-gradient(135deg, $red 5%, $black 100%);
 }
