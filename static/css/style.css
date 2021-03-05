@@ -60,7 +60,7 @@ footer {
 }
 
 .btn-index:hover {
-  color: #ffffff;
+  color: white;
   background: linear-gradient(135deg, red 5%, black 100%);
 }
 
@@ -125,6 +125,16 @@ ol li:before {
 .ocrs-link:hover {
   color: red;
   text-decoration: underline;
+}
+
+.btn-services {
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-services:hover {
+  color: white;
+  background: linear-gradient(135deg, black 5%, red 100%);
 }
 
 /* Contact page styles */

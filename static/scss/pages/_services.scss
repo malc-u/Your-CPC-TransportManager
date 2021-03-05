@@ -16,3 +16,15 @@
     color: $red;
     text-decoration: underline;
 }
+
+.btn-services {
+    border: 1px solid $white;
+    color: $white;
+}
+
+.btn-services:hover {
+    color: $white;
+    background: -moz-linear-gradient(135deg, $black 5%, $red 100%);
+    background: -webkit-linear-gradient(135deg, $black 5%, $red 100%);
+    background: linear-gradient(135deg, $black 5%, $red 100%);
+}
