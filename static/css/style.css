@@ -116,6 +116,16 @@ ol li:before {
   padding-top: 2rem;
 }
 
+.doc3-link {
+  color: red;
+  text-decoration: none;
+}
+
+.doc3-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+
 /* Contact page styles */
 .contact-email {
   color: red;
