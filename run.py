@@ -87,7 +87,7 @@ def contact():
         return redirect(url_for('index'))
 
     return render_template('pages/contact.html', 
-                            title='Contact')
+                            title='Contact', form=form)
 
 
 if __name__ == '__main__':
