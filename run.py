@@ -10,7 +10,7 @@ if os.path.exists("env.py"):
 app = Flask(__name__)
 
 #SECRET_KEY configuration
-app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 
 
 #Settings needed by Flask-Mail
@@ -19,8 +19,8 @@ mail_settings = {
     "MAIL_PORT": 465,
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
-    "MAIL_USERNAME": os.environ['MAIL_USERNAME'],
-    "MAIL_PASSWORD": os.environ['MAIL_PASSWORD'],
+    "MAIL_USERNAME": os.environ.get('MAIL_USERNAME'),
+    "MAIL_PASSWORD": os.environ.get('MAIL_PASSWORD'),
 }
 
 #Flask-Mail and Mail instance configuration
@@ -79,11 +79,11 @@ def contact():
         email = form.email.data
         message = form.message.data
         msg = Message(name,
-                      sender=os.environ["MAIL_USERNAME"],
-                      recipients=[os.environ["MAIL_USERNAME"]],
+                      sender=os.environ.get("MAIL_USERNAME"),
+                      recipients=[os.environ.get("MAIL_USERNAME")],
                       body="This is message from "+name+"\nEmail Address: "+email+"\n\nMessage sent:\n"+message)
         mail.send(msg)
-        flash(u'Your message has been sent.', 'success')
+        flash(u'Your message has been sent.', 'danger')
         return redirect(url_for('index'))
 
     return render_template('pages/contact.html', 
