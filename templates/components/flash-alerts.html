@@ -3,9 +3,12 @@
   <!-- Categories: success (green), info (blue), warning (yellow), danger (red) -->
   {% if messages %}
     {% for category, message in messages %}
-      <div class="alert alert-{{ category }} row pt-5 text-center" role="alert">
-        <strong>{{ message }}</strong>
+      <div class="row pt-5 mt-2">
+        <div class="alert alert-{{ category }} ms-2 text-center" role="alert">
+          <strong>{{ message }}</strong>
+        </div>
       </div>
+
     {% endfor %}
   {% endif %}
 {% endwith %}
