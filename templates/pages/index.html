@@ -1,9 +1,10 @@
 {% extends "layout/base.html" %}
 
 {% block content %}
+<div class="row mb-5 px-0 mx-0">
     <div class="col-sm-12" id="truck">
     </div>
-    <div class="col-sm-8 offset-sm-2 py-3 align-items-center">
+    <div class="col-sm-8 offset-sm-2 py-3 mb-5 mb-xxl-2 align-items-center">
         <h1 class="py-2">Your CPC Transport Manager </h1>
         <h3>The transport manager you need</h3>
 
@@ -13,4 +14,5 @@
             <a class="btn btn-index" href="{{url_for('about')}}">More...</a>
         </p>
     </div>
+</div>
 {% endblock %}
