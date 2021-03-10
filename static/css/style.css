@@ -52,6 +52,7 @@ footer {
   min-height: 60vh;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .btn-index {
