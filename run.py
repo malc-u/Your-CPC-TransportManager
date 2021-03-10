@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, flash, url_for, redirect
+from flask import Flask, render_template, flash, url_for, redirect, request
 from flask_mail import Mail, Message
 from forms import ContactForm
 
@@ -73,20 +73,20 @@ def contact():
     on on submit to make sure no information is missing.
     """
     form = ContactForm()
-
-    if form.validate_on_submit(): 
-        name = form.name.data
-        email = form.email.data
-        message = form.message.data
-        msg = Message(name,
-                      sender=os.environ.get("MAIL_USERNAME"),
-                      recipients=[os.environ.get("MAIL_USERNAME")],
-                      body="This is message from "+name+"\nEmail Address: "+email+"\n\nMessage sent:\n"+message)
-        mail.send(msg)
-        flash(u'Your message has been sent.', 'danger')
-        return redirect(url_for('index'))
-
-    return render_template('pages/contact.html', 
+    if request.method == 'POST':
+        if form.validate_on_submit(): 
+            name = form.name.data
+            email = form.email.data
+            message = form.message.data
+            msg = Message(name,
+                        sender=os.environ.get("MAIL_USERNAME"),
+                        recipients=[os.environ.get("MAIL_USERNAME")],
+                        body="This is message from "+name+"\nEmail Address: "+email+"\n\nMessage sent:\n"+message)
+            mail.send(msg)
+            flash(u'Your message has been sent.', 'danger')
+            return redirect(url_for('index'))
+    elif request.method == 'GET':   
+        return render_template('pages/contact.html', 
                             title='Contact', form=form)
 
 
